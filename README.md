@@ -39,15 +39,15 @@ The following changes were made to the original Enformer code for this project:
 
 This notebook demonstrates the workflow used to:
 
-- Load the Enformer model from TensorFlow Hub and the reference human genome (hg38)
-- Filter and extract prostate-relevant genomic targets from the Basenji2 human targets list
-- Make gene expression predictions for example genomic intervals and visualize selected prostate tracks
-- Compute contribution (gradient × input) scores to identify regulatory sequence importance
-- Score individual variants and visualize reference vs. alternate allele predictions across prostate-specific CAGE, DNASE, and ChIP tracks
-- Batch-process somatic SNP VCF files from prostate cancer patients, scoring all variants against prostate-relevant Enformer output features using both PCA-normalized (top 20 PCs) and z-score-normalized (all 5,313 features) scoring models
-- Save scored variant results to VCF and Excel output files with processing logs
+- Load the Enformer model from TensorFlow Hub and the reference human genome (hg38).
+- Filter and extract prostate-relevant genomic targets from the Basenji2 human targets list.
+- Make gene expression predictions for example genomic intervals and visualize selected prostate tracks.
+- Compute contribution (gradient × input) scores to identify regulatory sequence importance.
+- Score individual variants and visualize reference vs. alternate allele predictions across prostate-specific CAGE, DNASE, and ChIP tracks.
+- Batch-process somatic SNP VCF files from prostate cancer patients, scoring all variants against prostate-relevant Enformer output features using both PCA-normalized (top 20 PCs) and z-score-normalized (all 5,313 features) scoring models.
+- Save scored variant results to VCF and Excel output files with processing logs.
 
----
+---  
 
 ## Code Availability
 
@@ -66,4 +66,4 @@ The main implementation code for the Enformer workflow is provided in this repos
 
 ## License
 
-The original Enformer code is licensed under the **Apache License 2.0** by DeepMind Technologies Limited. See [https://www.apache.org/licenses/LICENSE-2.0](https://www.apache.org/licenses/LICENSE-2.0) for details.
+The original Enformer code is licensed under the **Apache License 2.0** by DeepMind Technologies Limited. See [https://www.apache.org/licenses/LICENSE-2.0](https://www.apache.org/licenses/LICENSE-2.0) for details. 
